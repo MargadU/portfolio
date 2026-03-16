@@ -1,0 +1,33 @@
+:root{
+  --bg: #0f0f17;
+  --card: linear-gradient(135deg,#ff8a00 0%,#e52e71 50%,#6a11cb 100%);
+  --muted: #bfc3d9;
+  --accent: #ff8a00;
+  --glass: rgba(255,255,255,0.06);
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Segoe UI,Roboto,Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#0f0f17 0%,#071028 100%);color:#eef2ff;line-height:1.5}
+.container{max-width:1000px;margin:0 auto;padding:2rem}
+.nav-row{display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:700;color:transparent;background-clip:text;-webkit-background-clip:text;background-image:var(--card);text-decoration:none}
+.nav a{color:var(--muted);text-decoration:none;margin-left:1rem}
+.nav-toggle{display:none;background:none;border:0;color:var(--muted);font-size:1.4rem}
+.hero{padding:6rem 0;background:radial-gradient(circle at 10% 10%, rgba(255,138,0,0.12), transparent 10%), radial-gradient(circle at 90% 90%, rgba(106,17,203,0.08), transparent 10%)}
+.hero-title{font-size:2.2rem;margin:0 0 .5rem;background-image:var(--card);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-sub{color:var(--muted);margin:0 0 1.25rem}
+.btn{display:inline-block;padding:.65rem 1rem;border-radius:8px;background:var(--card);color:#fff;text-decoration:none}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:2rem}
+.card{background:var(--glass);padding:1.25rem;border-radius:12px;box-shadow:0 6px 20px rgba(4,6,12,0.6)}
+.site-header{backdrop-filter:blur(6px);padding:1rem 0}
+.site-footer{padding:2rem 0;text-align:center;color:var(--muted)}
+.progress-list{list-style:none;padding:0;margin:0}
+.progress-list li{padding:.6rem .75rem;border-radius:6px;margin:.5rem 0;background:rgba(255,255,255,0.03)}
+.done{border-left:4px solid #34d399}
+.in-progress{border-left:4px solid #f59e0b}
+.todo{border-left:4px solid #94a3b8}
+@media(max-width:720px){
+  .nav{display:none;flex-direction:column;margin-top:.75rem}
+  .nav-toggle{display:inline-block}
+  .nav.open{display:flex}
+  .hero{padding:4rem 0}
+}
