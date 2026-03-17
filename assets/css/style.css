@@ -25,6 +25,11 @@ body{margin:0;font-family:Segoe UI,Roboto,Arial,Helvetica,sans-serif;background:
 .done{border-left:4px solid #34d399}
 .in-progress{border-left:4px solid #f59e0b}
 .todo{border-left:4px solid #94a3b8}
+
+/* Resume page profile picture */
+.resume-header{display:flex;align-items:center;gap:1.25rem;margin-bottom:1.75rem}
+.profile-pic{width:120px;height:120px;object-fit:cover;border-radius:999px;border:3px solid rgba(255,255,255,0.35)}
+
 @media(max-width:720px){
   .nav{display:none;flex-direction:column;margin-top:.75rem}
   .nav-toggle{display:inline-block}
