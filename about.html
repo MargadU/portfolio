@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Margad Undral</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="brand" href="index.html">Margad Undral</a>
+      <button id="navToggle" class="nav-toggle">☰</button>
+      <nav id="mainNav" class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="about">
+      <h1>About Me</h1>
+      <p>I'm a highschooler at UEIS, and I want to major in civil engineering.</p>
+
+      <h2 id="contact">Contact</h2>
+        <p>Email: <a href="mailto:u2.margad@gmail.com">u2.margad@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/scykw">github.com/scykw</a></p>
+
+        <h3>Contact form</h3>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+          <label for="name">Name</label><br>
+          <input id="name" name="name" required style="width:100%;padding:.5rem;margin:.25rem 0;border-radius:6px;border:1px solid rgba(255,255,255,0.08)">
+          <label for="email">Email</label><br>
+          <input id="email" name="email" type="email" required style="width:100%;padding:.5rem;margin:.25rem 0;border-radius:6px;border:1px solid rgba(255,255,255,0.08)">
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" rows="4" required style="width:100%;padding:.5rem;margin:.25rem 0;border-radius:6px;border:1px solid rgba(255,255,255,0.08)"></textarea>
+          <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year-2"></span> Margad Undral</div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
